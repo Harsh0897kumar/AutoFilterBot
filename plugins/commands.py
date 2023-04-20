@@ -22,8 +22,8 @@ logger = logging.getLogger(__name__)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         btn = [[
-            InlineKeyboardButton('⚡️ Updates Channel ⚡️', url=UPDATES_LINK),
-            InlineKeyboardButton('🔥 Support Group 🔥', url=SUPPORT_LINK)
+            InlineKeyboardButton('⚡️ Updates Channel ⚡️', url=https://t.me/riomovieshdtamil),
+            InlineKeyboardButton('🔥 Support Group 🔥', url=https://t.me/+scItr2ciVxQyODQ1)
         ]]
         s = await message.reply_sticker(sticker=random.choice(STICKERS), reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(30)
@@ -60,7 +60,7 @@ async def start(client, message):
             logger.error("Make sure Bot is admin in Forcesub channel")
             return
         btn = [[
-            InlineKeyboardButton("📢 Updates Channel 📢", url=invite_link.invite_link)
+            InlineKeyboardButton("📢 Updates Channel 📢", url=https://t.me/riomovieshdtamil)
         ]]
 
         if message.command[1] != "subscribe":
@@ -108,8 +108,8 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
 
     btn = [[
-        InlineKeyboardButton('⚡️ Updates Channel ⚡️', url=UPDATES_LINK),
-        InlineKeyboardButton('🔥 Support Group 🔥', url=SUPPORT_LINK)
+        InlineKeyboardButton('⚡️ Updates Channel ⚡️', url=https://t.me/riomovieshdtamil),
+        InlineKeyboardButton('🔥 Support Group 🔥', url=https://t.me/+scItr2ciVxQyODQ1)
     ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
